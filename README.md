@@ -10,13 +10,16 @@ cd docker-couchpotato
 docker build -t couchpotato .
 ```
 
+Run from hub.docker.com:
+
+```
 docker run -d  \
     -v $COUCHPOTATO_CONFIG:/config \
     -v $COUCHPOTATO_DATA:/data \
     -v $MOVIE_LIBRARY_DIR:/movies \
     -v $COUCHPOTATO_COMPLETE:/complete \
-    -p 5050:5050 --name couchpotato couchpotato
-
+    -p 5050:5050 --name couchpotato supercoder/couchpotato
+```
 
 When filling out the CP wizard, check the Rename downloaded movies.
 
