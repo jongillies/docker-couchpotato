@@ -2,7 +2,7 @@
 
 This is a Dockerfile to set up "CouchPotato" - (https://couchpota.to/)
 
-Build from docker file
+Build from docker file:
 
 ```
 git clone https://github.com/jongillies/docker-couchpotato.git
